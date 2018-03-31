@@ -1,0 +1,23 @@
+html,body{
+padding: 0;
+border: 0;
+background: #2C3D51;
+}
+.container{
+display:grid;
+grid-template-columns: 80px 80px 80px 80px; /*Creates 4 columns and rows all equally sized*/
+grid-template-rows: 80px 80px 80px 80px 80px;
+grid-gap:5px;
+background-color:grey;
+border-radius: 10px;
+border:  3px solid;
+}
+.answer{
+grid-column: 1/5;
+grid-row: 1;
+border: black 5px solid; 
+background-color:white;
+}
+button{
+border-radius: 10px;
+}
