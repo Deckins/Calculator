@@ -37,6 +37,13 @@ $(document).ready(function(){
 
 	});
 	$('.equal').click(function(){
+		
+		var totalString = result.join("");
+		result = [];
+		total = eval(totalString); //eval takes a string and returns the evaluation
+		result.push(total);
+		$('.answer').text(total);
+	/*
 		result.forEach(function(element,index,array){
 			if(isNaN(parseInt(element)) == true){	
 				beforeOP = result.splice(0,index).join("");
@@ -58,5 +65,6 @@ $(document).ready(function(){
 	
 
 		});
+	*/
 	});
 });
