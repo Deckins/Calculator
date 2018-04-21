@@ -8,9 +8,15 @@ $(document).ready(function(){
 		$('.answer').text(result.join(""));
 		console.log(input);
 	});
+	$('.decimal').click(function(){
+		if(isNaN(parseInt(result[result.length - 1])) == false)//if the last element is a number then  {
+			result.push($(this).text());
+			$('.answer').text(result.join(""));
+		}
+
+	})
         $('.add').click(function(){
 		input = $(this).text();
-		console.log(input);
 		result.push(input);
 		$('.answer').text(result.join(""));	
 	});
@@ -39,9 +45,9 @@ $(document).ready(function(){
 	$('.equal').click(function(){
 		
 		var totalString = result.join("");
-		result = [];
+		//result = [];
 		total = eval(totalString); //eval takes a string and returns the evaluation
-		result.push(total);
+		//result.push(total);
 		$('.answer').text(total);
 	/*
 		result.forEach(function(element,index,array){

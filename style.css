@@ -1,28 +1,58 @@
 html,body{
 padding: 0;
 border: 0;
-background: #2C3D51;
+margin:0;
+background-image: url("https://p8cdn4static.sharpschool.com/UserFiles/Servers/Server_650363/Image/108504851.jpg");
+background-repeat: no-repeat;
 }
 .container{
+position:relative;
+top:30px;
 display:grid;
 grid-template-columns: 80px 80px 80px 80px;  
-grid-template-rows: 70px 70px 70px 70px 70px;
-grid-gap:2px;
-background-color:grey;
+grid-template-rows: 70px 70px 70px 70px 70px 70px;
+background-color:#64b3f6;
 border-radius: 10px;
-border:3px maroon solid;
+border:3px navy solid;
 width: 330px;
 margin: 0 auto;
+box-shadow: 8px 8px 2px 2px navy;
 }
 .answer{
 grid-column: 1/5;
 grid-row: 1;
+height: 45px;
 border: black 5px solid; 
 background-color:white;
-font-family: italic;
-
+margin:10px;
+position:relative;
+left:5px;
+}
+.equal{
+grid-column: 2/5;
+grid-row: 6;
+width: 150px;
 }
 button{
+padding: 0;
+border: 0;
+bottom: 6px;
+box-shadow:2px 2px 0px black; 
+outline: none;
+cursor:pointer;
+white-space:nowrap;
+border-radius: 15px;
+position:relative;
+font-family: arial;
+border: 3px solid black;
+font-weight: bold;
+height:50px;
+width:70px;
+margin:10px;
+background-color:#f1e367
+}
+button:active {
+bottom:0;
+box-shadow: 0 0 0 black;
 
-border-radius: 25px;
 }
