@@ -1,41 +1,61 @@
+
 var input;
 var result=[];
 var beforeOP,afterOP,total;
+function getInput(){
+
+	if(isNaN(parseInt(result[result.length - 1])) == false)//if the last element is a number then  
+	{
+		result.push($(this).text());
+		$('.answer').text(result.join(""));
+	}
+
+}
 $(document).ready(function(){
 	$('.number').click(function(){
 		input = $(this).text();  //input is a string so parseInt turns it into an integer
 		result.push(input);
 		$('.answer').text(result.join(""));
 		console.log(input);
+	
+		;
 	});
 	$('.decimal').click(function(){
-		if(isNaN(parseInt(result[result.length - 1])) == false)//if the last element is a number then  {
+		if(isNaN(parseInt(result[result.length - 1])) == false)//if the last element is a number then
+		{
 			result.push($(this).text());
 			$('.answer').text(result.join(""));
 		}
-
 	})
         $('.add').click(function(){
+		if(isNaN(parseInt(result[result.length - 1])) == false){//if the last element is a number then
 		input = $(this).text();
 		result.push(input);
 		$('.answer').text(result.join(""));	
+		}
 	});
 	$('.subtract').click(function(){
+		if(isNaN(parseInt(result[result.length - 1])) == false){//if the last element is a number then
 		input = $(this).text();
 		result.push(input);
 		$('.answer').text(result.join(""));
+		}
 
 	});
 	$('.multiply').click(function(){
+		if(isNaN(parseInt(result[result.length - 1])) == false){//if the last element is a number then
 		input = $(this).text();
 		result.push(input);
 		$('.answer').text(result.join(""));
+		}
 		
 	});
 	$('.divide').click(function(){
+		if(isNaN(parseInt(result[result.length - 1])) == false){//if the last element is a number then
 		input = $(this).text();
 		result.push(input);
 		$('.answer').text(result.join(""));
+		}
 	})
 	$('.clear').click(function(){
 		result = [];
