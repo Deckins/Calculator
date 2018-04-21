@@ -8,6 +8,7 @@ background-repeat: no-repeat;
 .container{
 position:relative;
 top:30px;
+right: 140px;
 display:grid;
 grid-template-columns: 80px 80px 80px 80px;  
 grid-template-rows: 70px 70px 70px 70px 70px 70px;
